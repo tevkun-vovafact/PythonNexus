@@ -9,3 +9,4 @@
 # fix 7546
 # refactor 6591
 # fix 8249
+# fix 1152
