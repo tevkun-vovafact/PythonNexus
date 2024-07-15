@@ -1,3 +1,4 @@
 # auto-created
 pydantic==2.7.1
 requests==2.3.7
+requests==2.3.7
