@@ -41,3 +41,8 @@ def log_event(event):
     with open("event.log", "a") as f:
         f.write(f"{event}\\n")
 
+
+def log_event(event):
+    with open("event.log", "a") as f:
+        f.write(f"Event: {event}\\n")
+
