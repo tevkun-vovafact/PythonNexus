@@ -46,3 +46,4 @@ eth-abi==2.8.1
 aiohttp==1.1.0
 eth-abi==2.4.5
 eth-abi==2.6.2
+aiohttp==0.5.4
