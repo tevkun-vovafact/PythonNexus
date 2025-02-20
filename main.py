@@ -31,6 +31,13 @@ if __name__ == "__main__":
         f.write(forge.export())
 
 def log_event(event):
+    # Added error handling for file writing
+    try:
+        with open("error.log", "a") as f:
+            f.write(f"Error: {event}\n")
+    except IOError:
+        pass
+
         import datetime
 
         timestamp = datetime.datetime.now().isoformat()
@@ -43,11 +50,25 @@ def log_event(event):
 
 
 def log_event(event):
+    # Added error handling for file writing
+    try:
+        with open("error.log", "a") as f:
+            f.write(f"Error: {event}\n")
+    except IOError:
+        pass
+
     with open("event.log", "a") as f:
         f.write(f"Event: {event}\\n")
 
 
 def log_event(event):
+    # Added error handling for file writing
+    try:
+        with open("error.log", "a") as f:
+            f.write(f"Error: {event}\n")
+    except IOError:
+        pass
+
     with open("event.log", "a") as f:
         f.write(f"Event: {event}\\n")
 
