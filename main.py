@@ -31,6 +31,13 @@ if __name__ == "__main__":
         f.write(forge.export())
 
 def log_event(event):
+        import datetime
+
+        timestamp = datetime.datetime.now().isoformat()
+
+        with open("event.log", "a") as f:
+
+            f.write(f"{timestamp}: {event}\n")
     with open("event.log", "a") as f:
         f.write(f"{event}\\n")
 
